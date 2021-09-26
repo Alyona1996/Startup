@@ -5,59 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Startup</title>
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
-        rel="stylesheet">-->
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="main_banner">
+        <section class="main_banner" id="home">
             <div class="container">
                 <header class="header">
                     <a href="/" class="logo">
                         Startup
                     </a>
                     <nav class="navigation">
-                        <a href="#home">Home</a>
-                        <a href="#services">Services</a>
-                        <a href="#about">About</a>
-                        <a href="#works">Works</a>
-                        <a href="#blog">Blog</a>
-                        <a href="#clients">Clients</a>
-                        <a href="#contact">Contact</a>
+                        <span class="mobile-menu"></span>
+                        <div class="menu">
+                            <a href="#home">Home</a>
+                            <a href="#services">Services</a>
+                            <a href="#about">About</a>
+                            <a href="#works">Works</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#clients">Clients</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </nav>
-
                 </header>
+
                 <div class="banner-text">
                     <div class="container">
-                        <div class="banner">
-                            <ul>
-                                <li>
-                                    <h1>
-                                        WELCOM TO STARTUP
-                                    </h1>
-                                </li>
-
-                                <li>
-                                    <h3>
-                                        Your Favourite Creative Agency Template
-                                    </h3>
-                                </li>
-
-                            </ul>
-                        </div>
+                        <h1>WELCOM TO STARTUP</h1>
+                        <h2>Your Favourite Creative Agency Template</h2>
+                        <a class="button">
+                            Get Started
+                        </a>
                     </div>
                 </div>
 
+        </section>
+
+        <section id="services"></section>
+        <section id="About">
+            <div class="container">
+                <div class="swiper gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="about-img-wrapper">
+                                <img src="../Startup/image/Team2.jpg" alt="Rubel Miah">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="../Startup/image/Facebook-Logo.png" alt="Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/Startup/image/Facebook-Logo.png" alt="Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/Startup/image/Facebook-Logo.png" alt="Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/Startup/image/Facebook-Logo.png" alt="Facebook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="about-name">Rubel Miah</div>
+                            <div class="about-position">Lead WorldPress Developer</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
             </div>
         </section>
-        <section id="services"></section>
-        <section id="About"></section>
         <section id="works"></section>
         <section id="blog"></section>
         <section id="sclients"></section>
@@ -67,7 +93,8 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
